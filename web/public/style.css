@@ -1,0 +1,112 @@
+/* Общие стили */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #4624deae;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+  
+main {
+  flex: 1;
+}
+
+/* Стили для шапки */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* Стили для формы */
+
+form {
+  margin: 50px auto;
+  width: 80%;
+  max-width: 450px;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #1fc667cd;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1db55f;
+}
+
+/* Стили для подвала */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto;
+}
+
+#consent{
+
+  width: 15px;
+  height: 15px;
+}
+
+input[type="submit"][disabled] {
+  background-color: #333;
+  opacity: 0.5; /* уменьшаем прозрачность */
+  cursor:default;
+
+}
+input[type="submit"][disabled]:hover {
+  background-color: #333;
+  opacity: 0.5; /* уменьшаем прозрачность */
+  cursor:default;
+
+}

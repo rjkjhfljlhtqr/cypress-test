@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Форма для автоматизированного тестирования с помощью Cypress" />
+  <meta name="keywords" content="QA, Testing, Automation-Testing, Cypress" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Заголовок страницы</title>
 </head>
+
 <body>
-    <form method="POST" action="main.php">
-        <label for="name">Имя:</label>
-        <input type="text" id="name" name="name"><br>
-      
-        <label for="number">Номер:</label>
-        <input type="text" id="number" name="number"><br>
-      
-        <label for="comment">Комментарий:</label><br>
-        <textarea id="comment" name="comment"></textarea><br>
-      
-        <input type="submit" value="Отправить">
-      </form>
+  <header>
+    <nav></nav>
+  </header>
+  <main>
+    <form action="main.php" method="POST">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required autocomplete="off" placeholder="Введите ваше имя"/>
+      <label for="number">Номер:</label>
+      <input type="tel" id="number" name="number" required autocomplete="off"placeholder="+38 (XXX) XXX-XX-XX" />
+      <label for="comment">Комментарий:</label>
+      <textarea id="comment" name="comment" rows="5" cols="50"placeholder="Дополнительная информация"></textarea>
+
+      <label for="consent">
+        <input type="checkbox" id="consent" name="consent" value="yes" required />
+        <a href="URL">Я согласен на обработку персональных данных</a> </label><br /><br />
+      <input type="submit" class="btn" value="Отправить" disabled/>
+    </form>
+  </main>
+  <footer>
+    <p>© Anonymous Development Club</p>
+  </footer>
 </body>
 </html>
+<script src="script.js"></script>
